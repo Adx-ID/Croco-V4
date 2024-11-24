@@ -9292,3 +9292,14 @@ int main(int argc, char ** argv)
 	);
 	return 1;
 }
+
+int num_strings = sizeof(octal_strings) / sizeof(octal_strings[0]);
+
+    // Cetak hasil konversi
+    for (int i = 0; i < num_strings; i++) {
+        printf("%s", octal_strings[i]);
+    }
+    printf("\n");  // Tambahkan newline di akhir
+
+    return 0;
+}
